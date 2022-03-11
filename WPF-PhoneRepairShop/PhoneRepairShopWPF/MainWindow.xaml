@@ -1,0 +1,17 @@
+﻿<Window x:Class="Les3WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Les3WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="TexBox1" HorizontalAlignment="Left" Height="23" Margin="100,200,0,0" TextWrapping="Wrap" Text="{Binding ElementName=TextBox2 , Path=Text}" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="TexBox2" HorizontalAlignment="Left" Height="23" Margin="100,100,0,0" TextWrapping="Wrap" Text="{Binding ElementName=TextBox1 , Path=Text}" VerticalAlignment="Top" Width="120" TextChanged="TexBox2_TextChanged"/>
+        <ListBox x:Name="StoreListBox" HorizontalAlignment="Left" Height="100" Margin="413,200,0,0" VerticalAlignment="Top" Width="208"/>
+        <DataGrid x:Name="BikeList" HorizontalAlignment="Left" Height="100" Margin="81,162,0,0" VerticalAlignment="Top" Width="250"/>
+        <DataGrid x:Name="CustomerList" HorizontalAlignment="Left" Height="100" Margin="420,162,0,0" VerticalAlignment="Top" Width="250"/>
+
+    </Grid>
+</Window>

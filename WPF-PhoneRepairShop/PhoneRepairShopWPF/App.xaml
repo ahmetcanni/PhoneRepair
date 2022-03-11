@@ -1,0 +1,13 @@
+﻿<Application x:Class="WPFPhoneRepairShop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WPFPhoneRepairShop"
+             StartupUri="View/MainWindow.xaml">
+    <Application.Resources>
+
+        <ItemsPanelTemplate x:Key="ItemsPanelTemplate1">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Top" MaxWidth="0" MaxHeight="0"/>
+        </ItemsPanelTemplate>
+
+    </Application.Resources>
+</Application>
